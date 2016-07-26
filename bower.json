@@ -1,0 +1,18 @@
+{
+  "name": "strong_man",
+  "description": "MMA site",
+  "main": "index.js",
+  "authors": [
+    "Dejon Gill"
+  ],
+  "license": "ISC",
+  "homepage": "https://github.com/itsmed/strong_man",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}

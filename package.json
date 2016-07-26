@@ -1,0 +1,19 @@
+{
+  "name": "strong_man",
+  "version": "1.0.0",
+  "description": "MMA site",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/itsmed/strong_man.git"
+  },
+  "author": "Dejon Gill",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/itsmed/strong_man/issues"
+  },
+  "homepage": "https://github.com/itsmed/strong_man#readme"
+}
