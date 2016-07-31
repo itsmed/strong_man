@@ -1,11 +1,11 @@
 {
   "name": "strong_man",
   "description": "MMA site",
-  "main": "index.js",
+  "main": "server.js.js",
   "authors": [
     "Dejon Gill"
   ],
-  "license": "ISC",
+  "license": "UNLICENSED",
   "homepage": "https://github.com/itsmed/strong_man",
   "private": true,
   "ignore": [
@@ -16,9 +16,6 @@
     "tests"
   ],
   "dependencies": {
-    "angular": "^1.5.8",
-    "angular-mocks": "^1.5.8",
-    "jquery": "^3.1.0",
-    "angular-route": "^1.5.8"
+    "jquery": "^3.1.0"
   }
 }
