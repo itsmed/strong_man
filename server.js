@@ -22,8 +22,17 @@ app.get('/', function(req, res) {
   res.sendFile(`${publicPath}/index.html`);
 });
 
-app.listen(port, function() {
-  console.log(`app listening on port ${port}`);
-});
+if (!isProduction) {
+  
+  var server = app.listen(port, function() {
+    console.log(`app listening on port ${port}`);
+  });
+
+  module.exports = server;
+} else {
+  app.listen(port, function() {
+    console.log(`app listening on port ${port}`);
+  });
+}
 
 
