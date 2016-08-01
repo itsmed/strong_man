@@ -12,6 +12,7 @@ const proxy = httpProxy.createProxyServer({
   changeOrigin: true
 });
 const app = express();
+app.use(express.static('public'));
 const publicPath = path.resolve(__dirname, 'public');
 
 
