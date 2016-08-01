@@ -38,11 +38,13 @@ h2 {
   opacity: 0.3;
   position: fixed;
   margin-bottom: 300px;
+  margin-top: 50px;
 }
 
 #blurb {
   position: fixed;
   font-size: 130%;
+  margin-top: 50px;
 }
 
 
