@@ -28,5 +28,9 @@ if (!isProduction) {
   });
   
   module.exports = server;
+} else {
+  app.listen(port, function() {
+    console.log(`app listening on port ${port}`);
+  });
 }
 
