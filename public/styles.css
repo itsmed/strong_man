@@ -5,23 +5,13 @@ body {
   background-color: #252128;
 }
 
-/*p {
-  font-size: 2em;
-  @media screen and (max-width: 640px) {
-    font-size: 10pt;
-  }
-}*/
 
 /* changes background color of header */
 header {
   background-color: rgba(245, 255, 245, 0.1);
 }
 
-*/
-/* increases sizes of headers */
-/*#main_title {
-  font-size: 250%;
-}*/
+
 h2 {
   font-size: 2em;
 }
@@ -41,6 +31,11 @@ h2 {
   margin-top: 50px;
 }
 
+.meet_the_fighter {
+  background-color: #FE6148;
+  margin-top: 1%;
+}
+
 #blurb {
   position: fixed;
   font-size: 130%;
@@ -51,5 +46,5 @@ h2 {
 #main {
   margin-top: 600px;
   background-color: #252128;
-  min-height: 900px;
+  min-height: 1200px;
 }
