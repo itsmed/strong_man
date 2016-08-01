@@ -1,0 +1,49 @@
+/* presentational */
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  color: white;
+  background-color: #252128;
+}
+
+p {
+  font-size: 2em;
+}
+
+/* changes background color of header */
+header {
+  background-color: rgba(245, 255, 245, 0.1);
+}
+
+*/
+/* increases sizes of headers */
+#main_title {
+  font-size: 5em;
+}
+/*h2 {
+  font-size: 2em;
+}*/
+.ad_spot{
+  min-height: 100px;
+}
+
+.s_m_background {
+  min-height: 650px;
+  background-image: url('/images/smfight.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: top;
+  opacity: 0.3;
+  position: fixed;
+  margin-bottom: 300px;
+}
+
+#blurb {
+  position: fixed;
+}
+
+
+#main {
+  margin-top: 600px;
+  background-color: #252128;
+  min-height: 900px;
+}
