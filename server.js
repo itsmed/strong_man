@@ -22,8 +22,9 @@ app.get('/', function(req, res) {
   res.sendFile(`${publicPath}/index.html`);
 });
 
-var server = app.listen(port, function() {
+// var server = 
+app.listen(port, function() {
   console.log(`app listening on port ${port}`);
 });
 
-module.exports = server;
+// module.exports = server;
