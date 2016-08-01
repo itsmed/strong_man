@@ -5,9 +5,12 @@ body {
   background-color: #252128;
 }
 
-p {
+/*p {
   font-size: 2em;
-}
+  @media screen and (max-width: 640px) {
+    font-size: 10pt;
+  }
+}*/
 
 /* changes background color of header */
 header {
@@ -16,12 +19,12 @@ header {
 
 */
 /* increases sizes of headers */
-#main_title {
-  font-size: 5em;
-}
-/*h2 {
-  font-size: 2em;
+/*#main_title {
+  font-size: 250%;
 }*/
+h2 {
+  font-size: 2em;
+}
 .ad_spot{
   min-height: 100px;
 }
@@ -39,6 +42,7 @@ header {
 
 #blurb {
   position: fixed;
+  font-size: 130%;
 }
 
 
