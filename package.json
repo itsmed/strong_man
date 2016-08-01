@@ -7,6 +7,9 @@
     "test": "mocha test/",
     "start": "npm test && nodemon server.js"
   },
+  "engines": {
+    "node": "6.2.2"
+  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/itsmed/strong_man.git"
