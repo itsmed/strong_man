@@ -6,16 +6,16 @@ const express = require('express');
 const httpProxy = require('http-proxy');
 
 const isProduction = process.env.NODE_ENV === 'production';
+const publicPath = path.resolve(__dirname, 'public');
 
-
-const proxy = httpProxy.createProxyServer({
-  changeOrigin: true
-});
+// const proxy = httpProxy.createProxyServer({
+//   changeOrigin: true
+// });
 const app = express();
 
 app.set('port', (process.env.PORT || 8500));
-app.use(express.static('public'));
-const publicPath = path.resolve(__dirname, 'public');
+app.use(express.static(publicPath));
+
 
 
 app.get('/', function(req, res) {
