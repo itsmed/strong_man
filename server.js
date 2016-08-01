@@ -14,6 +14,7 @@ const publicPath = path.resolve(__dirname, 'public');
 const app = express();
 const port = isProduction ? process.env.PORT : 8500;
 // app.set('port', (process.env.PORT || 8500));
+// app.use(publicPath);
 app.use(express.static(publicPath));
 
 
