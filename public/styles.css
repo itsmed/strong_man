@@ -8,15 +8,27 @@ body {
 
 /* changes background color of header */
 header {
-  background-color: rgba(245, 255, 245, 0.1);
+  position: fixed;
+  width: 100%;
+  z-index: 99;
 }
 
+h1 {
+  font-size: 3.3em;
+}
 
 h2 {
-  font-size: 2em;
+  font-size: 2.2em;
 }
+p {
+  text-transform: capitalize;
+}
+
 .ad_spot{
-  min-height: 100px;
+  /*position: relative;*/
+  min-height: 10em;
+  margin-top: 4em;
+  margin-bottom: 2em;
 }
 
 .s_m_background {
@@ -27,8 +39,7 @@ h2 {
   background-position: top;
   opacity: 0.3;
   position: fixed;
-  margin-bottom: 300px;
-  margin-top: 50px;
+  margin-top: 7.2em;
 }
 
 .meet_the_fighter {
@@ -39,12 +50,25 @@ h2 {
 #blurb {
   position: fixed;
   font-size: 130%;
-  margin-top: 50px;
+  margin-top: 5.2em;
 }
 
+.social_brands {
+  margin-top: .3em;
+}
+
+.social_brands > img {
+  margin-left: .8em;
+}
 
 #main {
   margin-top: 600px;
   background-color: #252128;
   min-height: 1200px;
+}
+
+#brand-image {
+  background-image: url('/images/sm.png');
+  height: 100%;
+  width: 20%;
 }
