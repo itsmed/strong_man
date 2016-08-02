@@ -24,6 +24,10 @@ app.get('/', function(req, res) {
   res.sendFile(`${publicPath}/index.html`);
 });
 
+app.get('/gallery', function(req, res) {
+  res.sendFile(`${publicPath}/gallery.html`);
+});
+
 if (!isProduction) {
   
   var server = app.listen(port, function() {
