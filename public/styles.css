@@ -79,11 +79,22 @@ p {
 /* centers images in carousel */
 .carousel-inner > .item > img {
   width: 60%;
-  %;
   margin: auto;
 }
 
 #about_content > p {
   font-size: 1.5em;
   margin-top: 1em;
+}
+
+#content_not_found {
+  height: 300px;
+  text-align: center;
+  margin-top: 5em;
+  margin-bottom: 5em;
+}
+
+.cont_not_found_msg {
+  font-size: 3.5em;
+  position: center;
 }
