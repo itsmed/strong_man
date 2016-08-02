@@ -69,8 +69,11 @@ p {
 
 #brand-image {
   background-image: url('/images/sm_logo.png');
-  height: 100%;
-  width: 20%;
+  background-size: cover;
+  height: 3em;
+  width: 3em;
+  position: relative;
+  top: -1em;
 }
 
 /* centers images in carousel */
@@ -78,4 +81,9 @@ p {
   width: 60%;
   %;
   margin: auto;
+}
+
+#m-content > p {
+  font-size: 1.5em;
+  margin-top: 1em;
 }
