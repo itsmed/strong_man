@@ -41,7 +41,7 @@ p {
   background-repeat: no-repeat;
   background-size: cover;
   background-position: top;
-  opacity: 0.3;
+  opacity: 0.9;
   position: fixed;
   margin-top: 7.2em;
 }
@@ -54,7 +54,15 @@ p {
 #blurb {
   position: fixed;
   font-size: 130%;
-  margin-top: 5.2em;
+  margin-top: 6.3em;
+  width: 15em;
+  border-radius: 10%;
+  background-color: rgba(219, 193, 213, 0.2);
+  text-shadow: 1px 0 #FFE0F8, 0 1px #FFE0F8, 1px 0 #FFE0F8, 0 1px #FFE0F8;
+}
+
+#blurb_content {
+  text-shadow: 0 0 #FFE0F8, 0 0 #FFE0F8, 0 0 #FFE0F8, 0 0 #FFE0F8;
 }
 
 .social_brands {
