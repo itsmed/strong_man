@@ -8,7 +8,6 @@ const httpProxy = require('http-proxy');
 const isProduction = process.env.NODE_ENV === 'production';
 const publicPath = path.resolve(__dirname, 'public');
 
-
 // const proxy = httpProxy.createProxyServer({
 //   changeOrigin: true
 // });
