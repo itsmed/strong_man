@@ -17,8 +17,8 @@ Icon
 .Trashes
 bower_components
 node_modules/
-db/
-public/libs
+server/db/
+
 
 # Floobits
 .floo
