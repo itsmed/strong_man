@@ -88,13 +88,34 @@ p {
   top: -1em;
 }
 
+#myCarousel {
+  height: 650px;
+}
+
 /* centers images in carousel */
 .carousel-inner > .item > img {
   max-width: 60%;
   height: 500px;
   margin: auto;
+  display: block;
 }
 
+.carousel-caption {
+  height: 100px;
+  position: relative;
+  bottom: 0;
+  display: block;
+}
+
+.carousel-caption > p {
+  position: relative;
+  right: 20%;
+}
+
+.carousel-caption > h3 {
+  position: relative;
+  right: 20%;
+}
 #about_content > p {
   font-size: 1.5em;
   margin-top: 1em;
