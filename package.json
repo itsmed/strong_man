@@ -5,7 +5,7 @@
   "main": "server/server.js",
   "scripts": {
     "test": "mocha --compilers js:babel-core/register --require ./test/test_helper.js ./test/**/*.js",
-    "start": "node server/server.js"
+    "start": "node server.js"
   },
   "engines": {
     "node": "6.2."
@@ -97,4 +97,5 @@
       "es2015",
       "react"
     ]
+  }
 }
