@@ -78,9 +78,13 @@
     "fs": "0.0.2",
     "http-proxy": "^1.14.0",
     "mongoose": "^4.5.7",
+<<<<<<< HEAD
     "path": "^0.12.7",
     "webpack": "^1.13.1"
 >>>>>>> parent of e548955... Adding dependencies
+=======
+    "path": "^0.12.7"
+>>>>>>> parent of e3a9910... Beginning SPA
   },
   "devDependencies": {
     "chai": "^3.5.0",
@@ -108,8 +112,12 @@
 =======
     "chai-http": "^3.0.0",
     "mocha": "^2.5.3",
+<<<<<<< HEAD
     "supertest": "^2.0.0",
     "webpack-dev-server": "^1.14.1"
 >>>>>>> parent of e548955... Adding dependencies
+=======
+    "supertest": "^2.0.0"
+>>>>>>> parent of e3a9910... Beginning SPA
   }
 }
