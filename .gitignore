@@ -17,15 +17,11 @@ Icon
 .Trashes
 bower_components
 node_modules/
-<<<<<<< HEAD
+
 server/db/
 postInstallScript.txt
 public/build
-=======
-db/
-public/libs
 
->>>>>>> parent of e548955... Adding dependencies
 # Floobits
 .floo
 .floobit
