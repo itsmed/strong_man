@@ -1,7 +1,7 @@
 var path = require('path');
 var webpack = require('webpack');
 var ExtractTextPlugin = require('extract-text-webpack-plugin');
-
+var CleanWebpackPlugin = require('clean-webpack-plugin');
 var sassLoaders = [
     'css-loader',
     'postcss-loader',
@@ -12,7 +12,7 @@ var sassLoaders = [
 module.exports = {
 
   //fastest rebuild and build speed
-  devtool: 'eval', 
+  devtool: '#source-map', 
   entry: [
     //for hot style updates
     'webpack/hot/dev-server',
@@ -24,7 +24,8 @@ module.exports = {
   output: {
     path: path.join(__dirname, 'public', 'build'),
     filename: 'bundle.js',
-    publicPath: '/build/' //the server will listen in on this path and then proxy Webpack
+    publicPath: '/build/', //the server will listen in on this path and then proxy Webpack
+    sourceMapFileName: './bundle.map'
   },
 
   module: {
@@ -55,6 +56,7 @@ module.exports = {
   //Hot Replacement plugin
   plugins: [
     new webpack.HotModuleReplacementPlugin(),
-    new ExtractTextPlugin('[name].css')
+    new ExtractTextPlugin('[name].css'),
+    new CleanWebpackPlugin(['build'])
   ]
 };

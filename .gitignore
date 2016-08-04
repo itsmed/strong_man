@@ -18,8 +18,8 @@ Icon
 bower_components
 node_modules/
 server/db/
-
-
+postInstallScript.txt
+public/build
 # Floobits
 .floo
 .floobit
