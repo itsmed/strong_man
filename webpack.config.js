@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 var path = require('path');
 var webpack = require('webpack');
 var ExtractTextPlugin = require('extract-text-webpack-plugin');
@@ -60,3 +61,5 @@ module.exports = {
     new CleanWebpackPlugin(['build'])
   ]
 };
+=======
+>>>>>>> parent of e548955... Adding dependencies

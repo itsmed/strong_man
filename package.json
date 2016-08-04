@@ -4,8 +4,13 @@
   "description": "MMA site",
   "main": "server/server.js",
   "scripts": {
+<<<<<<< HEAD
     "test": "mocha --compilers js:babel-core/register --require ./test/test_helper.js ./test/**/*.js",
     "start": "node server/server.js"
+=======
+    "test": "mocha test/",
+    "start": "node server.js"
+>>>>>>> parent of e548955... Adding dependencies
   },
   "engines": {
     "node": "6.2."
@@ -22,6 +27,7 @@
   },
   "homepage": "https://github.com/itsmed/strong_man#readme",
   "dependencies": {
+<<<<<<< HEAD
     "axios": "^0.9.1",
     "babel-core": "*",
     "babel-loader": "*",
@@ -67,12 +73,18 @@
     "url-loader": "^0.5.7",
     "webpack": "^1.9.11",
     "whatwg-fetch": "^0.11.0"
+=======
+    "express": "^4.14.0",
+    "fs": "0.0.2",
+    "http-proxy": "^1.14.0",
+    "mongoose": "^4.5.7",
+    "path": "^0.12.7",
+    "webpack": "^1.13.1"
+>>>>>>> parent of e548955... Adding dependencies
   },
   "devDependencies": {
-    "async": "^2.0.0-rc.2",
-    "babel-eslint": "*",
-    "babel-register": "*",
     "chai": "^3.5.0",
+<<<<<<< HEAD
     "chai-immutable": "^1.5.4",
     "clean-webpack-plugin": "^0.1.10",
     "enzyme": "^2.2.0",
@@ -93,5 +105,11 @@
       "es2015",
       "react"
     ]
+=======
+    "chai-http": "^3.0.0",
+    "mocha": "^2.5.3",
+    "supertest": "^2.0.0",
+    "webpack-dev-server": "^1.14.1"
+>>>>>>> parent of e548955... Adding dependencies
   }
 }
