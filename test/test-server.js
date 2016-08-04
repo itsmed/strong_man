@@ -8,15 +8,12 @@ chai.use(chaiHttp);
 
 describe('loading express', () => {
   let server;
-  let startTime;
   beforeEach(() => {
-    startTime = Date.now();
     server = require('../server.js', { bustCache: true });
   });
 
   afterEach((done) => {
     server.close(done);
-    console.log(`Run in ${Date.now() - startTime} milliseconds.`);
   });
 
   it('responds to / with status of 200', function testSlash (done) {
