@@ -26,12 +26,14 @@
     "fs": "0.0.2",
     "http-proxy": "^1.14.0",
     "mongoose": "^4.5.7",
-    "path": "^0.12.7"
+    "path": "^0.12.7",
+    "webpack": "^1.13.1"
   },
   "devDependencies": {
     "chai": "^3.5.0",
     "chai-http": "^3.0.0",
     "mocha": "^2.5.3",
-    "supertest": "^2.0.0"
+    "supertest": "^2.0.0",
+    "webpack-dev-server": "^1.14.1"
   }
 }
