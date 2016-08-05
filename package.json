@@ -26,6 +26,8 @@
     "fs": "0.0.2",
     "http-proxy": "^1.14.0",
     "mongoose": "^4.5.7",
+    "passport": "^0.3.2",
+    "passport-google-oauth": "^1.0.0",
     "path": "^0.12.7"
   },
   "devDependencies": {

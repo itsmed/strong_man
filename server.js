@@ -24,7 +24,7 @@ app.get('/', function(req, res) {
 });
 
 app.get('/gallery', function(req, res) {
-  res.sendFile(`${publicPath}/gallery.html`);
+  res.sendFile(`${publicPath}/pages/gallery.html`);
 });
 
 if (!isProduction) {
