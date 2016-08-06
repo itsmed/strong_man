@@ -27,6 +27,13 @@ app.get('/gallery', function(req, res) {
   res.sendFile(`${publicPath}/pages/gallery.html`);
 });
 
+app.get('/api/ticket_submit?', function(req, res) {
+
+  console.log('got the route');
+  res.sendFile(`${publicPath}/index.html`);
+
+});
+
 if (!isProduction) {
   
   var server = app.listen(port, function() {
@@ -38,6 +45,6 @@ if (!isProduction) {
   app.listen(port, function() {
     console.log(`app listening on port ${port}`);
   });
+  // module.exports = app;
 }
-
 

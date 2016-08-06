@@ -17,6 +17,13 @@ footer {
   text-align: center;
 }
 
+input {
+  color: black;
+  border-color: black;
+  border-width: 2px;
+  border-style: solid;
+}
+
 h1 {
   font-size: 3.3em;
 }
@@ -133,6 +140,32 @@ p {
   position: center;
 }
 
-/*.thumbnail {
-  max-width: 270px;
-}*/
+#ticket_form {
+  width: 80%;
+  height: 40em;
+  margin-left: 10%;
+  background-color: rgba(37, 33, 40, 0.2);
+  color: black;
+}
+
+.form_ele {
+  display: block;
+}
+
+.phone3 {
+  width: 3em;
+} 
+
+#last_four {
+  width: 3.5em;
+}
+
+.err_msg {
+  height: 3em;
+  color: red;
+  font-weight: 2em;
+}
+
+.hidden {
+  display: none;
+}
