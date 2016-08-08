@@ -1,18 +1,23 @@
 'use strict';
-const path = require('path');
-const fs = require('fs');
-const mongoose = require('mongoose');
 const express = require('express');
-const httpProxy = require('http-proxy');
+const path = require('path');
+const cookieParser = require('cookie-parser');
+const session = require('express-session');
+const bodyParser = require('body-parser');
+const passport = require('passport');
+const flash = require('connect-flash');
+
+
+
+const app = express();
 
 const isProduction = process.env.NODE_ENV === 'production';
+const port = isProduction ? process.env.PORT : 8500;
 const publicPath = path.resolve(__dirname, 'public');
 
 // const proxy = httpProxy.createProxyServer({
 //   changeOrigin: true
 // });
-const app = express();
-const port = isProduction ? process.env.PORT : 8500;
 
 app.use(express.static(publicPath));
 // allows bower components to be used in dev
