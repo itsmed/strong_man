@@ -148,16 +148,31 @@ p {
   color: black;
 }
 
+
+#events > h2 {
+  margin-left: 40%;
+}
+
 .form_ele {
   display: block;
+  width: 21.75em;
+  height: 2em;
 }
 
 .phone3 {
-  width: 3em;
+  width: 3.75em;
 } 
 
 #last_four {
-  width: 3.5em;
+  width: 12em;
+}
+
+#coupon {
+  height: 4.5em;
+}
+
+.below_toggle_move {
+  margin-top: 250px;
 }
 
 .err_msg {
@@ -168,4 +183,9 @@ p {
 
 .hidden {
   display: none;
+}
+
+.ticket_dropdown {
+  list-style: none;
+  margin-bottom: 2em;
 }

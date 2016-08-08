@@ -79,10 +79,11 @@
 				</div>
 			</div>
 		</div>
-		<div id="events" class="row">
-			<div class="col-xs-12 col-md-10 col-md-offset-1">	
-				<h1>Events</h1>
+		<div class="row">
+			<div id="events" class="col-xs-12 col-md-10 col-md-offset-1">	
+				<h2>Events</h2>
 				<div id="ticket_form">
+					<h3>Reserve Tickets</h3>
 					<span class="form_ele">First Name</span>
 					<input id="first_name" class="form_ele" type="text" placeholder="First Name">
 					<span class="err_msg hidden"></span>
@@ -99,8 +100,27 @@
 					<span class="phone err_msg hidden"></span>
 					<input id="last_four" type="text">
 					<span class="phone err_msg hidden"></span>
-					<div class="g-recaptcha" data-sitekey="6Leu5iYTAAAAAEcra1lFvhBESk6SMvIqulbSDG-2"></div>
-					<button id="ticket_submit" class="btn btn-default btn-sm">Submit</button>
+					<div class="dropdown">
+					  <button class="btn btn-secondary dropdown-toggle dropdown_begin" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+					    Options
+					  </button>
+					  <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+					    <ul class="ticket_dropdown">
+						    <li>General [1] - $50 <input type="radio" value="one_general"></li>
+						    <li>General [2] - $95 <input type="radio" value="two_general"></li>
+						    <li><hr></li>
+						    <li>VIP [1] - $75 <input type="radio" value="one_vip"></li>
+						    <li>VIP [1] - $145 <input type="radio" value="two_vip"></li>
+						    <li><hr></li>
+						    <li>Ring-Side $100 <input type="radio" value="one_ring_side"></li>
+						  </ul>
+					  </div>
+					</div>
+					<div class="below_toggle">
+						<textarea id="coupon" class="form_ele" placeholder="RSVP ONLY, MUST COMPLETE CONFIRMATION BEFORE PURCHASE. ENTER CODE HERE."></textarea>
+						<div class="g-recaptcha" data-sitekey="6Leu5iYTAAAAAEcra1lFvhBESk6SMvIqulbSDG-2"></div>
+						<button id="ticket_submit" class="btn btn-default btn-sm">Submit</button>
+					</div>
 				</div>
 			</div>
 		</div>

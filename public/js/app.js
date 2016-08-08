@@ -2,13 +2,20 @@
 
 $(document).ready(function() {
 
-
   watchForm();
   
   $('#ticket_submit').click(function(e) {
     e.preventDefault();
     submitForm();
   });
+
+  $('.dropdown_begin').click(function() {
+    $('.dropdown').toggleClass('open');
+    $('.below_toggle').toggleClass('below_toggle_move');
+    $('#myCarousel').toggleClass('below_toggle_move');
+
+  });
+
 
 });
 
@@ -133,6 +140,17 @@ function submitForm() {
   let areaCode = $('#area_code').val();
   let prefix = $('#prefix').val();
   let lastFour = $('#last_four').val();
+  let code = $('#coupon').val();
+  
 
-  console.log(first + ' ' + last + ' ' + email + ' (' + areaCode + ') ' + prefix + '-' + lastFour );
+  let orderForm = $('.ticket_dropdown').find('input'); 
+  let order = '';
+  console.log('form', orderForm)
+  $.each(orderForm, function(index, node) {
+    if (node.checked === true) {
+      order += node.value + ' ';
+    }
+  });
+  console.log('order', order);
+  console.log(first + ' ' + last + ', ' + email + ', at (' + areaCode + ') ' + prefix + '-' + lastFour + 'used Promotion Code: ' + code + ' to order ' + order);
 }
