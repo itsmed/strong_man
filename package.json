@@ -2,10 +2,11 @@
   "name": "strong_man",
   "version": "1.0.0",
   "description": "MMA site",
-  "main": "server.js",
+  "main": "index.js",
   "scripts": {
-    "test": "mocha test/",
-    "start": "node server.js"
+    "test": "mocha test/**/*.js",
+    "start": "node index.js",
+    "dev": "nodemon index.js"
   },
   "engines": {
     "node": "6.2.2"
