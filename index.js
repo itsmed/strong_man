@@ -57,7 +57,7 @@ if (!isProduction) {
 
   module.exports = {
     server: server,
-    db: db
+    db: db // TODO: Remove db, double check that it's not needed
   };
 
 } else {
